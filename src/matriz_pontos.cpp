@@ -13,7 +13,7 @@ using namespace std;
 # include "matriz_pontos.h"
 
 void add_propriedades(std::ofstream &TMatriz_src,std::stringstream &endereco){
-  std::ifstream file_in("in/PROPRIEDADES.md");
+  std::ifstream file_in("file_in/PROPRIEDADES.md");
   if( !file_in ){cout << "Erro ao abrir os arquivos.\n";return;}
   //faz a coleta dos dados
   std::string entrada;

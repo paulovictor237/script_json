@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/script_exe.dir/src/main.cpp.o CMakeFiles/script_exe.dir/src/comum.cpp.o CMakeFiles/script_exe.dir/src/matriz_pontos.cpp.o CMakeFiles/script_exe.dir/src/simulacao.cpp.o  -o script_exe 

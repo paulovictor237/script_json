@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 {
 //+------------------------------------------------------------<< 
   // system("cls");
-  system("clear");
+  //system("clear");
 //+------------------------------------------------------------<< 
   //configuracoes de inicializacao
   int Pallet=1;
@@ -40,7 +40,9 @@ int main(int argc, char **argv)
     Pallet = stoi(argv[2]);
   }else{
     cout << "Parametros Insuficientes" << endl;
-    return 1;
+    cout << "Entre com os seguites valores:" << endl;
+    cout << "script_exe quadrante pallet" << endl;
+    return 0;
   }
 //+------------------------------------------------------------<< 
   cout << "# PROGRAMA INICIADO #"<<endl;
@@ -51,7 +53,7 @@ int main(int argc, char **argv)
 //+------------------------------------------------------------<< 
   cout << "# $ >> PROGRAMA INICIADO << $"<<endl;
   cout << "# >> OPCOES <<\n"<< endl;
-  cout << "Quadrante: " << Pallet << " | " << "Pallet: " << Pallet << endl;
+  cout << "Quadrante: " << quadrante << " | " << "Pallet: " << Pallet << endl;
   cout << "\n-----------------------------\n" << endl;
 //+------------------------------------------------------------<< 
   //determina quadrante
@@ -89,7 +91,7 @@ int main(int argc, char **argv)
   class Receita receita;
 //+------------------------------------------------------------<<
   //lê o arquivo
-  std::ifstream file_in("in/My_Job.json");
+  std::ifstream file_in("file_in/My_Job.json");
   if( !file_in ){cout << "Erro ao abrir os arquivos.\n";return 0;}
   //faz a coleta dos dados
   while (!file_in.eof())
@@ -170,13 +172,13 @@ int main(int argc, char **argv)
   if( !simulacao_src ){cout << "Erro ao abrir os arquivos.\n";return 0;}
   if( !simulacao_dat ){cout << "Erro ao abrir os arquivos.\n";return 0;}
 
-  std::ofstream TReceita_src("out/INIT/TReceita.src",std::ofstream::out);
-  std::ofstream TReceita_dat("out/INIT/TReceita.dat",std::ofstream::out);
+  std::ofstream TReceita_src("file_out/INIT/TReceita.src",std::ofstream::out);
+  std::ofstream TReceita_dat("file_out/INIT/TReceita.dat",std::ofstream::out);
   if( !TReceita_src ){cout << "Erro ao abrir os arquivos.\n";return 0;}
   if( !TReceita_dat ){cout << "Erro ao abrir os arquivos.\n";return 0;}
 
-  std::ofstream TMatriz_src ("out/INIT/TMatriz.src", std::ofstream::out);
-  std::ofstream TMatriz_dat ("out/INIT/TMatriz.dat", std::ofstream::out);
+  std::ofstream TMatriz_src ("file_out/INIT/TMatriz.src", std::ofstream::out);
+  std::ofstream TMatriz_dat ("file_out/INIT/TMatriz.dat", std::ofstream::out);
   if( !TMatriz_src ){cout << "Erro ao abrir os arquivos.\n";return 0;}
   if( !TMatriz_dat ){cout << "Erro ao abrir os arquivos.\n";return 0;}
 

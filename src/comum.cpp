@@ -24,7 +24,7 @@ void Receita::inverte_coluna(void)
       aux2 =  all_poses[fim].Y;
       //while(!(abs(all_poses[fim].Y) < abs(aux2)-diferenca|| abs(aux2)+diferenca< abs(all_poses[fim].Y))){
       while(aux2 == all_poses[fim].Y){
-        //begin/end
+        //begfile_in/end
         aux_1.insert(aux_1.begin(),all_poses[fim]);
         //cout << " " << all_poses[fim].Y;
         fim++;
@@ -54,7 +54,7 @@ void Receita::inverte_linha(void)
     while(fim!=PlacesCamada*(i+1)){
       aux2 =  all_poses[fim].Y;
       while(aux2 == all_poses[fim].Y){
-        //begin/end
+        //begfile_in/end
         aux_1.insert(aux_1.begin(),all_poses[fim]);
         //cout << " " << all_poses[fim].Y;
         fim++;

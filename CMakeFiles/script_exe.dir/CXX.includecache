@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/src/comum.h
+
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/src/main.cpp
+iostream
+-
+fstream
+-
+iomanip
+-
+algorithm
+-
+math.h
+-
+sstream
+-
+string
+-
+vector
+-
+regex
+-
+comum.h
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/src/comum.h
+simulacao.h
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/src/simulacao.h
+matriz_pontos.h
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/src/matriz_pontos.h
+
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/src/matriz_pontos.h
+
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/src/simulacao.h
+

@@ -1,7 +1,7 @@
 # $ >> PROGRAMA INICIADO << $
 # >> OPCOES <<
 
-Quadrante: 1 | Pallet: 1
+Quadrante: 4 | Pallet: 3
 
 -----------------------------
 

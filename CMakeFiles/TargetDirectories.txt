@@ -1,0 +1,4 @@
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/CMakeFiles/edit_cache.dir
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/CMakeFiles/run.dir
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/JSON-Scrip/CMakeFiles/script_exe.dir

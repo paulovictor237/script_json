@@ -19,17 +19,19 @@ void Receita::inverte_coluna(void)
   double aux2;
   // double diferenca=(Caixa.weight<Caixa.length?Caixa.weight:Caixa.length);
   int inicio=0,fim=0,k=0,j=0,i=0;
+  int size_vector=all_poses.size();
   for(int i=0;i<Layers;i++){
     while(fim!=PlacesCamada*(i+1)){
+      if (fim>=size_vector)break;
       aux2 =  all_poses[fim].Y;
       //while(!(abs(all_poses[fim].Y) < abs(aux2)-diferenca|| abs(aux2)+diferenca< abs(all_poses[fim].Y))){
-      while(aux2 == all_poses[fim].Y){
+      while(fim<size_vector && aux2 == all_poses[fim].Y){
         //begfile_in/end
         aux_1.insert(aux_1.begin(),all_poses[fim]);
-        //cout << " " << all_poses[fim].Y;
+        //std::cout << " " << all_poses[fim].Y;
         fim++;
       }
-      //cout << endl;
+      //std::cout << endl;
       for (auto &outt : aux_1){
         aux_2.insert(aux_2.end(),outt);
       }
@@ -50,16 +52,18 @@ void Receita::inverte_linha(void)
   std::vector<Pose> aux_3;
   double aux2;
   int inicio=0,fim=0,k=0,j=0,i=0;
+  int size_vector=all_poses.size();
   for(int i=0;i<Layers;i++){
     while(fim!=PlacesCamada*(i+1)){
+      if (fim>=size_vector)break;
       aux2 =  all_poses[fim].Y;
-      while(aux2 == all_poses[fim].Y){
+      while(fim<size_vector && aux2 == all_poses[fim].Y){
         //begfile_in/end
         aux_1.insert(aux_1.begin(),all_poses[fim]);
-        //cout << " " << all_poses[fim].Y;
+        //std::cout << " " << all_poses[fim].Y;
         fim++;
       }
-      //cout << endl;
+      //std::cout << endl;
       for (auto &outt : aux_1){
         aux_2.insert(aux_2.begin(),outt);
       }
@@ -98,7 +102,7 @@ void Receita::quadrante_vector(int quadrante)
 
 void ERROR_messege(std::string mensagem)
 {
-  cout << "<span style=\"color:red\">**ERROR: " << mensagem << "**</span>"<<endl;
+  std::cout << "<span style=\"color:red\">**ERROR: " << mensagem << "**</span>"<<endl;
 }
 
 std::string split_string(std::string tokenString,string delim,int saida)
@@ -133,7 +137,7 @@ void imprime_vetor(vector<string> tokens)
 {
   int i=0;
   for (const string& token: tokens){
-    cout << "[" << i << "]"<< "-> " << token << "\n";
+    std::cout << "[" << i << "]"<< "-> " << token << "\n";
     i++;
   }
 }
